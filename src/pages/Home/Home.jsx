@@ -3,9 +3,11 @@ import DonationCards from "../../Components/DonationCards/DonationCards";
 import Banner from "./Banner";
 
 
+
 const Home = () => {
 
     const donationsCard = useLoaderData();
+    
     
     return (
         <div>

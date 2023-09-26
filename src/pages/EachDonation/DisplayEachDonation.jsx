@@ -32,10 +32,12 @@ const DisplayEachDonation = ({donation}) => {
         <div>
             <div className="items-center justify-center mt-4">
                 <img className="w-[1100px] mx-auto" src={donation.picture} alt="" />
-                <button onClick={handleAddToDonation} 
-                className="bg-[#FF444A] rounded p-2 text-white relative bottom-14 left-4">Donate ${price}</button>
+                <div className="bg-gray-300 opacity-80 h-24">
+                <button onClick={handleAddToDonation} style={{color:text_bg}}
+                className="bg-[#FF444A] font-semibold rounded p-2 relative -bottom-4 left-4">Donate ${price}</button>
+                </div>
                 <h2 className="text-2xl font-semibold mt-6">{donation.title}</h2>
-                <p className="text-base font-normal mt-6 ">{donation.description}</p>
+                <p className="text-base font-normal mt-6 pb-3">{donation.description}</p>
             </div>
         </div>
     );

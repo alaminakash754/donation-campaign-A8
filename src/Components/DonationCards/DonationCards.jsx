@@ -1,6 +1,8 @@
 import Card from "./Card";
 
 const DonationCards = ({donationsCard}) => {
+
+    
     
     return (
         <div className="py-10">
