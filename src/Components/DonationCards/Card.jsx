@@ -7,7 +7,7 @@ const Card = ({ donation }) => {
 
     return (
         <Link to={`/donations/${id}`}>
-            <div style={{backgroundColor:card_bg, borderRadius:'5px'}}>
+            <div style={{ backgroundColor: card_bg, borderRadius: '5px' }}>
                 <div className="">
                     <img
                         src={picture}
@@ -15,12 +15,10 @@ const Card = ({ donation }) => {
                     />
                 </div>
                 <div className="p-2">
-
-                    <p style={{color:text_color, backgroundColor:text_bg, textAlign:"left", fontWeight: '500', fontSize:'16px', width:'82px' , borderRadius:'5px', padding:'2px'}} >
+                    <p style={{ color: text_color, backgroundColor: text_bg, textAlign: "left", fontWeight: '500', fontSize: '16px', width: '82px', borderRadius: '5px', padding: '2px' }} >
                         {donation.category_name}
                     </p>
-
-                    <p style={{color:text_color, fontWeight: '600', fontSize:'18px'}}>
+                    <p style={{ color: text_color, fontWeight: '600', fontSize: '18px' }}>
                         {donation.title}
                     </p>
                 </div>
