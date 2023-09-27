@@ -17,13 +17,13 @@ const Statistics = () => {
   const totalDonation = 12;
   const myPercentage = (allDonation.length / totalDonation) * 100;
   const myRemaining = 100 - myPercentage;
-
+    
   return(
     <div>
         <div>
           {
             noDataFound ? <p className='h-[80vh] flex justify-center items-center text-2xl'>{noDataFound}</p> :
-            <Chart className='h-[80vh] flex justify-center items-center' type='pie' height={500} series={[myPercentage, myRemaining]} options={{ labels: ['Your Donation', 'Total Donation']}}></Chart>
+            <Chart className='h-[80vh] flex justify-center items-center' type='pie' height={400} series={[myPercentage, myRemaining]} options={{ labels: ['Your Donation', 'Total Donation']}}></Chart>
           }
         </div>
     </div>

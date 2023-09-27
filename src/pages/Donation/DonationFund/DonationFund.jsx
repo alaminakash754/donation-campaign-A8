@@ -4,7 +4,7 @@ const DonationFund = ({ donation }) => {
     const { id, category_name, title, text_color, price, description, picture, category_bg, card_bg, text_bg } = donation || {}
 
     return (
-        <div style={{ backgroundColor: card_bg, borderRadius: '5px', display: "flex" }}>
+        <div style={{ backgroundColor: card_bg, borderRadius: '5px', display: "flex" , marginBottom: '10px'}}>
             <div className="">
                 <img
                     src={picture}
@@ -12,12 +12,10 @@ const DonationFund = ({ donation }) => {
                 />
             </div>
             <div className="p-2">
-
                 <p style={{ color: text_color, backgroundColor: text_bg, textAlign: "left", fontWeight: '500', fontSize: '16px', width: '82px', borderRadius: '5px', padding: '2px', marginTop: '10px' }} >
                     {donation.category_name}
                 </p>
-
-                <p style={{ color: "black", fontWeight: '600', fontSize: '18px', marginTop: '10px' }}>
+                <p style={{ color: text_color, fontWeight: '600', fontSize: '18px', marginTop: '10px' }}>
                     {donation.title}
                 </p>
                 <p style={{ color: text_color, marginTop: '10px' }}>${donation.price}</p>
